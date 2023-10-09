@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Appointment Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a functional React application for managing contacts and appointments. It was developed as a challenge project, and the main goal was to work with stateful and stateless functional React components using hooks.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The application consists of two main pages:
+- **Contacts Page**: Allows users to view and add new contacts.
+- **Appointments Page**: Enables users to view and schedule new appointments.
 
-### `npm start`
+![Component Diagram](link-to-your-component-diagram-if-you-have-one)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## [Live Demo](https://appointment-planner-tylerte.netlify.app/contacts)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Experience the application in action by visiting the live demo.
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To set up the project locally:
 
-### `npm run build`
+1. Ensure you have [Node.js](https://nodejs.org/) installed.
+2. Clone the repository: `git clone https://github.com/TyTe108/Appointment-Planner.git`
+3. Navigate to the project directory: `cd Appointment-Planner`
+4. Install the required dependencies: `npm install`
+5. Start the application: `npm start`
+6. Open your browser and visit [http://localhost:3000/](http://localhost:3000/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Contacts Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- View a list of existing contacts.
+- Add new contacts with fields for name, phone, and email.
+- Check for duplicate names and prevent adding contacts with duplicate names.
 
-### `npm run eject`
+### Appointments Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- View a list of scheduled appointments.
+- Schedule new appointments with fields for name, contact, date, and time.
+- Select a contact from the existing contacts list when scheduling an appointment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The main components of the project are:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `App.js`: Handles routing between the Contacts and Appointments pages and maintains the state for contacts and appointments.
+- `ContactsPage.js`: Manages the logic for adding and listing contacts.
+- `AppointmentsPage.js`: Manages the logic for scheduling and listing appointments.
+- `ContactForm.js`: Stateless component for the contact form.
+- `AppointmentForm.js`: Stateless component for the appointment form.
+- `TileList.js`: Renders a list of Tile components.
+- `Tile.js`: Displays data from an object.
+- `ContactPicker.js`: Renders a dropdown list of all contact names.
 
-## Learn More
+## Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To fully understand and work with this project, you should be familiar with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- JSX
+- React Components
+- Components Interacting
+- Hooks
+- React Programming Patterns
+- React Styles
+- React Forms
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Tyler Te
 
-### Analyzing the Bundle Size
+## Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to fork this repository, make changes, and submit pull requests. Any contributions are welcome!
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is open-source and available under the [MIT License](LICENSE).
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
