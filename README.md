@@ -8,8 +8,6 @@ The application consists of two main pages:
 - **Contacts Page**: Allows users to view and add new contacts.
 - **Appointments Page**: Enables users to view and schedule new appointments.
 
-![Component Diagram](link-to-your-component-diagram-if-you-have-one)
-
 ## [Live Demo](https://appointment-planner-tylerte.netlify.app/contacts)
 
 Experience the application in action by visiting the live demo.
